@@ -1,2 +1,2 @@
 # myZooKeeper
-Pet-Care made easy
+pet-care made easy
