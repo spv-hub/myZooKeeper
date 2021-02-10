@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MiM-ze-ZQ4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeLoginVC-->
+        <scene sceneID="dyZ-xY-wdO">
+            <objects>
+                <viewController id="MiM-ze-ZQ4" userLabel="HomeLoginVC" customClass="ViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0DN-L3-9go">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="myZooKeeper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tb-S1-Oad">
+                                <rect key="frame" x="86" y="332" width="242" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Ic0-YG-xUO">
+                                <rect key="frame" x="-11" y="-246" width="436" height="935"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstDot" translatesAutoresizingMaskIntoConstraints="NO" id="tvi-e5-Bid">
+                                <rect key="frame" x="189" y="740" width="31" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="ewK-5D-tTZ"/>
+                                    <constraint firstAttribute="height" constant="19" id="gH1-Mx-MrW"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzf-QP-Mh1">
+                                <rect key="frame" x="45" y="784" width="369" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ITe-Qa-ctz"/>
+                                    <constraint firstAttribute="width" constant="369" id="IVq-L6-DPH"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="signInButton"/>
+                                <connections>
+                                    <action selector="googleAction:" destination="MiM-ze-ZQ4" eventType="touchUpInside" id="Dl2-5s-eBD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qjP-lD-mod"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qjP-lD-mod" firstAttribute="trailing" secondItem="tvi-e5-Bid" secondAttribute="trailing" constant="194" id="6Z9-U9-PN0"/>
+                            <constraint firstItem="rzf-QP-Mh1" firstAttribute="top" secondItem="tvi-e5-Bid" secondAttribute="bottom" constant="25" id="JJU-AX-gPF"/>
+                            <constraint firstItem="tvi-e5-Bid" firstAttribute="leading" secondItem="qjP-lD-mod" secondAttribute="leading" constant="189" id="T1G-eH-acK"/>
+                            <constraint firstItem="rzf-QP-Mh1" firstAttribute="leading" secondItem="qjP-lD-mod" secondAttribute="leading" constant="45" id="XTk-Nq-TG3"/>
+                            <constraint firstItem="rzf-QP-Mh1" firstAttribute="trailing" secondItem="qjP-lD-mod" secondAttribute="trailing" id="jHC-dA-sts"/>
+                            <constraint firstItem="qjP-lD-mod" firstAttribute="bottom" secondItem="rzf-QP-Mh1" secondAttribute="bottom" constant="28" id="v6L-mn-MWC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmF-dP-onC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2872" y="-235"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="firstDot" width="27" height="8"/>
+        <image name="homeBackground" width="375" height="375"/>
+        <image name="signInButton" width="315" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

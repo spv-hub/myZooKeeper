@@ -3,80 +3,149 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7F31C8125C7BFEF001EA303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31C8025C7BFEF001EA303 /* AppDelegate.swift */; };
-		A7F31C8325C7BFEF001EA303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31C8225C7BFEF001EA303 /* SceneDelegate.swift */; };
-		A7F31C8525C7BFEF001EA303 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31C8425C7BFEF001EA303 /* ViewController.swift */; };
-		A7F31C8825C7BFEF001EA303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F31C8625C7BFEF001EA303 /* Main.storyboard */; };
-		A7F31C8A25C7BFF0001EA303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F31C8925C7BFF0001EA303 /* Assets.xcassets */; };
-		A7F31C8D25C7BFF0001EA303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F31C8B25C7BFF0001EA303 /* LaunchScreen.storyboard */; };
+		05F41F1D621F09D30FAF31AA /* Pods_myZooKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C959EFFB7A7363DA1052B5F8 /* Pods_myZooKeeper.framework */; };
+		60A87FFB25CB1F130018F46B /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A87FFA25CB1F130018F46B /* AddPetViewController.swift */; };
+		A752D41A25D237F80011B657 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A752D41925D237F80011B657 /* Onboarding.storyboard */; };
+		A752D41E25D23C8E0011B657 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A752D41D25D23C8E0011B657 /* WalkthroughContentViewController.swift */; };
+		A7A6A5EE25C935870092584F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7A6A5ED25C935870092584F /* GoogleService-Info.plist */; };
+		A7E5537125D373AD004C5C4F /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E5537025D373AD004C5C4F /* WalkthroughPageViewController.swift */; };
+		A7E5537425D377A2004C5C4F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E5537325D377A2004C5C4F /* WalkthroughViewController.swift */; };
+		A7F31CC625C8C563001EA303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31CC525C8C563001EA303 /* AppDelegate.swift */; };
+		A7F31CC825C8C563001EA303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31CC725C8C563001EA303 /* SceneDelegate.swift */; };
+		A7F31CCA25C8C563001EA303 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31CC925C8C563001EA303 /* ViewController.swift */; };
+		A7F31CCD25C8C563001EA303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F31CCB25C8C563001EA303 /* Main.storyboard */; };
+		A7F31CCF25C8C565001EA303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F31CCE25C8C565001EA303 /* Assets.xcassets */; };
+		A7F31CD225C8C565001EA303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F31CD025C8C565001EA303 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A7F31C7D25C7BFEF001EA303 /* myZooKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myZooKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7F31C8025C7BFEF001EA303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7F31C8225C7BFEF001EA303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7F31C8425C7BFEF001EA303 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A7F31C8725C7BFEF001EA303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A7F31C8925C7BFF0001EA303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A7F31C8C25C7BFF0001EA303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A7F31C8E25C7BFF0001EA303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A87FFA25CB1F130018F46B /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
+		9B895190997A2B9AF7BD2AE2 /* Pods-myZooKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myZooKeeper.debug.xcconfig"; path = "Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper.debug.xcconfig"; sourceTree = "<group>"; };
+		A752D41925D237F80011B657 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Onboarding.storyboard; path = ../../../Onboarding.storyboard; sourceTree = "<group>"; };
+		A752D41D25D23C8E0011B657 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		A7A6A5ED25C935870092584F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7E5537025D373AD004C5C4F /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		A7E5537325D377A2004C5C4F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		A7F31CC225C8C563001EA303 /* myZooKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myZooKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F31CC525C8C563001EA303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7F31CC725C8C563001EA303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A7F31CC925C8C563001EA303 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7F31CCC25C8C563001EA303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7F31CCE25C8C565001EA303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7F31CD125C8C565001EA303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7F31CD325C8C565001EA303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C959EFFB7A7363DA1052B5F8 /* Pods_myZooKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myZooKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC77B59E4DB0E26396BC995D /* Pods-myZooKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myZooKeeper.release.xcconfig"; path = "Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A7F31C7A25C7BFEF001EA303 /* Frameworks */ = {
+		A7F31CBF25C8C563001EA303 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F41F1D621F09D30FAF31AA /* Pods_myZooKeeper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A7F31C7425C7BFEF001EA303 = {
+		0E0AAAB9CF00D7D3CEFCAE9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A7F31C7F25C7BFEF001EA303 /* myZooKeeper */,
-				A7F31C7E25C7BFEF001EA303 /* Products */,
+				C959EFFB7A7363DA1052B5F8 /* Pods_myZooKeeper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A752D40C25D214680011B657 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A752D40D25D214720011B657 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A7F31CC925C8C563001EA303 /* ViewController.swift */,
+				60A87FFA25CB1F130018F46B /* AddPetViewController.swift */,
+				A752D41D25D23C8E0011B657 /* WalkthroughContentViewController.swift */,
+				A7E5537025D373AD004C5C4F /* WalkthroughPageViewController.swift */,
+				A7E5537325D377A2004C5C4F /* WalkthroughViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A752D40E25D214840011B657 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A7F31CCB25C8C563001EA303 /* Main.storyboard */,
+				A752D41925D237F80011B657 /* Onboarding.storyboard */,
+				A7F31CD025C8C565001EA303 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A7F31CB925C8C563001EA303 = {
+			isa = PBXGroup;
+			children = (
+				A7F31CC425C8C563001EA303 /* myZooKeeper */,
+				A7F31CC325C8C563001EA303 /* Products */,
+				EBCA6D55A05CA04E7025C358 /* Pods */,
+				0E0AAAB9CF00D7D3CEFCAE9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		A7F31C7E25C7BFEF001EA303 /* Products */ = {
+		A7F31CC325C8C563001EA303 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7F31C7D25C7BFEF001EA303 /* myZooKeeper.app */,
+				A7F31CC225C8C563001EA303 /* myZooKeeper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A7F31C7F25C7BFEF001EA303 /* myZooKeeper */ = {
+		A7F31CC425C8C563001EA303 /* myZooKeeper */ = {
 			isa = PBXGroup;
 			children = (
-				A7F31C8025C7BFEF001EA303 /* AppDelegate.swift */,
-				A7F31C8225C7BFEF001EA303 /* SceneDelegate.swift */,
-				A7F31C8425C7BFEF001EA303 /* ViewController.swift */,
-				A7F31C8625C7BFEF001EA303 /* Main.storyboard */,
-				A7F31C8925C7BFF0001EA303 /* Assets.xcassets */,
-				A7F31C8B25C7BFF0001EA303 /* LaunchScreen.storyboard */,
-				A7F31C8E25C7BFF0001EA303 /* Info.plist */,
+				A752D40E25D214840011B657 /* Storyboard */,
+				A752D40D25D214720011B657 /* View Controller */,
+				A752D40C25D214680011B657 /* Model */,
+				A7F31CC525C8C563001EA303 /* AppDelegate.swift */,
+				A7F31CC725C8C563001EA303 /* SceneDelegate.swift */,
+				A7F31CCE25C8C565001EA303 /* Assets.xcassets */,
+				A7A6A5ED25C935870092584F /* GoogleService-Info.plist */,
+				A7F31CD325C8C565001EA303 /* Info.plist */,
 			);
 			path = myZooKeeper;
+			sourceTree = "<group>";
+		};
+		EBCA6D55A05CA04E7025C358 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B895190997A2B9AF7BD2AE2 /* Pods-myZooKeeper.debug.xcconfig */,
+				EC77B59E4DB0E26396BC995D /* Pods-myZooKeeper.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A7F31C7C25C7BFEF001EA303 /* myZooKeeper */ = {
+		A7F31CC125C8C563001EA303 /* myZooKeeper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7F31C9125C7BFF0001EA303 /* Build configuration list for PBXNativeTarget "myZooKeeper" */;
+			buildConfigurationList = A7F31CD625C8C565001EA303 /* Build configuration list for PBXNativeTarget "myZooKeeper" */;
 			buildPhases = (
-				A7F31C7925C7BFEF001EA303 /* Sources */,
-				A7F31C7A25C7BFEF001EA303 /* Frameworks */,
-				A7F31C7B25C7BFEF001EA303 /* Resources */,
+				95ECF850D9539D57DB356915 /* [CP] Check Pods Manifest.lock */,
+				A7F31CBE25C8C563001EA303 /* Sources */,
+				A7F31CBF25C8C563001EA303 /* Frameworks */,
+				A7F31CC025C8C563001EA303 /* Resources */,
+				D2AE6C075420665FAADB5AA9 /* [CP] Embed Pods Frameworks */,
+				E8CD07CE69F6E6DE36B36D79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -84,24 +153,24 @@
 			);
 			name = myZooKeeper;
 			productName = myZooKeeper;
-			productReference = A7F31C7D25C7BFEF001EA303 /* myZooKeeper.app */;
+			productReference = A7F31CC225C8C563001EA303 /* myZooKeeper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A7F31C7525C7BFEF001EA303 /* Project object */ = {
+		A7F31CBA25C8C563001EA303 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					A7F31C7C25C7BFEF001EA303 = {
+					A7F31CC125C8C563001EA303 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = A7F31C7825C7BFEF001EA303 /* Build configuration list for PBXProject "myZooKeeper" */;
+			buildConfigurationList = A7F31CBD25C8C563001EA303 /* Build configuration list for PBXProject "myZooKeeper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,55 +178,120 @@
 				en,
 				Base,
 			);
-			mainGroup = A7F31C7425C7BFEF001EA303;
-			productRefGroup = A7F31C7E25C7BFEF001EA303 /* Products */;
+			mainGroup = A7F31CB925C8C563001EA303;
+			productRefGroup = A7F31CC325C8C563001EA303 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7F31C7C25C7BFEF001EA303 /* myZooKeeper */,
+				A7F31CC125C8C563001EA303 /* myZooKeeper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A7F31C7B25C7BFEF001EA303 /* Resources */ = {
+		A7F31CC025C8C563001EA303 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7F31C8D25C7BFF0001EA303 /* LaunchScreen.storyboard in Resources */,
-				A7F31C8A25C7BFF0001EA303 /* Assets.xcassets in Resources */,
-				A7F31C8825C7BFEF001EA303 /* Main.storyboard in Resources */,
+				A7F31CD225C8C565001EA303 /* LaunchScreen.storyboard in Resources */,
+				A7A6A5EE25C935870092584F /* GoogleService-Info.plist in Resources */,
+				A752D41A25D237F80011B657 /* Onboarding.storyboard in Resources */,
+				A7F31CCF25C8C565001EA303 /* Assets.xcassets in Resources */,
+				A7F31CCD25C8C563001EA303 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		95ECF850D9539D57DB356915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myZooKeeper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2AE6C075420665FAADB5AA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CD07CE69F6E6DE36B36D79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		A7F31C7925C7BFEF001EA303 /* Sources */ = {
+		A7F31CBE25C8C563001EA303 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7F31C8525C7BFEF001EA303 /* ViewController.swift in Sources */,
-				A7F31C8125C7BFEF001EA303 /* AppDelegate.swift in Sources */,
-				A7F31C8325C7BFEF001EA303 /* SceneDelegate.swift in Sources */,
+				A7E5537125D373AD004C5C4F /* WalkthroughPageViewController.swift in Sources */,
+				A7E5537425D377A2004C5C4F /* WalkthroughViewController.swift in Sources */,
+				A7F31CCA25C8C563001EA303 /* ViewController.swift in Sources */,
+				A7F31CC625C8C563001EA303 /* AppDelegate.swift in Sources */,
+				60A87FFB25CB1F130018F46B /* AddPetViewController.swift in Sources */,
+				A752D41E25D23C8E0011B657 /* WalkthroughContentViewController.swift in Sources */,
+				A7F31CC825C8C563001EA303 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A7F31C8625C7BFEF001EA303 /* Main.storyboard */ = {
+		A7F31CCB25C8C563001EA303 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A7F31C8725C7BFEF001EA303 /* Base */,
+				A7F31CCC25C8C563001EA303 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A7F31C8B25C7BFF0001EA303 /* LaunchScreen.storyboard */ = {
+		A7F31CD025C8C565001EA303 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A7F31C8C25C7BFF0001EA303 /* Base */,
+				A7F31CD125C8C565001EA303 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -165,7 +299,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A7F31C8F25C7BFF0001EA303 /* Debug */ = {
+		A7F31CD425C8C565001EA303 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +360,7 @@
 			};
 			name = Debug;
 		};
-		A7F31C9025C7BFF0001EA303 /* Release */ = {
+		A7F31CD525C8C565001EA303 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -281,8 +415,9 @@
 			};
 			name = Release;
 		};
-		A7F31C9225C7BFF0001EA303 /* Debug */ = {
+		A7F31CD725C8C565001EA303 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B895190997A2B9AF7BD2AE2 /* Pods-myZooKeeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,8 +434,9 @@
 			};
 			name = Debug;
 		};
-		A7F31C9325C7BFF0001EA303 /* Release */ = {
+		A7F31CD825C8C565001EA303 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC77B59E4DB0E26396BC995D /* Pods-myZooKeeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,25 +456,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7F31C7825C7BFEF001EA303 /* Build configuration list for PBXProject "myZooKeeper" */ = {
+		A7F31CBD25C8C563001EA303 /* Build configuration list for PBXProject "myZooKeeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7F31C8F25C7BFF0001EA303 /* Debug */,
-				A7F31C9025C7BFF0001EA303 /* Release */,
+				A7F31CD425C8C565001EA303 /* Debug */,
+				A7F31CD525C8C565001EA303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7F31C9125C7BFF0001EA303 /* Build configuration list for PBXNativeTarget "myZooKeeper" */ = {
+		A7F31CD625C8C565001EA303 /* Build configuration list for PBXNativeTarget "myZooKeeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7F31C9225C7BFF0001EA303 /* Debug */,
-				A7F31C9325C7BFF0001EA303 /* Release */,
+				A7F31CD725C8C565001EA303 /* Debug */,
+				A7F31CD825C8C565001EA303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A7F31C7525C7BFEF001EA303 /* Project object */;
+	rootObject = A7F31CBA25C8C563001EA303 /* Project object */;
 }
