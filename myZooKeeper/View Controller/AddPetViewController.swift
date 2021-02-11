@@ -39,9 +39,12 @@ class AddPetViewController: UIViewController {
     @IBAction func SavePet(_ sender: UIButton) {
         
         var ref: DocumentReference? = nil
+        let uid = Auth.auth().currentUser!.uid
         ref = Firestore.firestore().collection("pet_profiles").addDocument(data: [
             "name": NameTextField.text!,
-            "weight": weightTextField.text!
+            "weight": weightTextField.text!,
+            "userId": uid
+        
            
         ]) { err in
             if let err = err {
@@ -53,3 +56,18 @@ class AddPetViewController: UIViewController {
     }
     
 }
+//call for retrieving docs from firestore
+//associate id for document associate it with user
+
+//tableview setup where data comes from
+//store current user ID
+// db.collection("cities").whereField("capital", isEqualTo: true)
+//.getDocuments() { (querySnapshot, err) in
+//    if let err = err {
+//        print("Error getting documents: \(err)")
+//    } else {
+//        for document in querySnapshot!.documents {
+//            print("\(document.documentID) => \(document.data())")
+//        }
+//    }
+//}
