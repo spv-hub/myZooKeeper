@@ -22,9 +22,7 @@ class AddPetViewController: UIViewController {
         
         if UserDefaults.standard.bool(forKey: "isSignedIn") {
             return
-            
         }
-        
         
         let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
         if let walkthroughViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughViewController") as? WalkthroughViewController {
@@ -34,7 +32,8 @@ class AddPetViewController: UIViewController {
     }
     
     
-    @IBOutlet weak var speciesTextField: UITextField!
+    @IBOutlet weak var weightTextField: UITextField!
+    
     
     
     @IBAction func SavePet(_ sender: UIButton) {
@@ -42,8 +41,8 @@ class AddPetViewController: UIViewController {
         var ref: DocumentReference? = nil
         ref = Firestore.firestore().collection("pet_profiles").addDocument(data: [
             "name": NameTextField.text!,
-            "species": speciesTextField.text!,
-            "gender": "Female"
+            "weight": weightTextField.text!
+           
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")
@@ -53,24 +52,4 @@ class AddPetViewController: UIViewController {
         }
     }
     
-    @IBAction func SavePetButton(_ sender: UIButton) {
-        //print("SavePetButton got tapped.")
-        var ref: DocumentReference? = nil
-        ref = Firestore.firestore().collection("pet_profiles").addDocument(data: [
-            "name": NameTextField.text!,
-            "species": "dog",
-            "gender": "Female"
-        ]) { err in
-            if let err = err {
-                print("Error adding document: \(err)")
-            } else {
-                print("Document added with ID: \(ref!.documentID)")
-            }
-        }
-
-
-    }
-    
-   
- 
 }
