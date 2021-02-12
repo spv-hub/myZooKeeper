@@ -13,6 +13,7 @@ target 'myZooKeeper' do
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
   pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Storage'
 
 end
 

@@ -154,21 +154,6 @@
             </objects>
             <point key="canvasLocation" x="-2963.0769230769229" y="-528.55450236966817"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="VdQ-aq-fcJ">
-            <objects>
-                <viewController id="Mvm-EZ-JlL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ylr-vc-aol">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="rsc-aZ-Zgj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rPw-iy-zlP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2975" y="154"/>
-        </scene>
     </scenes>
     <resources>
         <image name="signInButton" width="315" height="50"/>
