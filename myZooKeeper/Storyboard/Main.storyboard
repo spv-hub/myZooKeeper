@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ze-PV-Bhd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Ru-gQ-lB5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -16,16 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Userpic" translatesAutoresizingMaskIntoConstraints="NO" id="QXa-wa-AC6">
-                                <rect key="frame" x="144" y="231" width="131" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="↳ Display" translatesAutoresizingMaskIntoConstraints="NO" id="KZU-8H-tab">
-                                <rect key="frame" x="87" y="136" width="240" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="↳ Display" translatesAutoresizingMaskIntoConstraints="NO" id="KZU-8H-tab">
+                                <rect key="frame" x="123" y="188" width="168" height="21"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymM-rv-I36">
-                                <rect key="frame" x="339" y="44" width="35" height="32"/>
+                                <rect key="frame" x="339" y="123" width="35" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
@@ -33,7 +28,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pet Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSs-QM-pey">
-                                <rect key="frame" x="87" y="491" width="240" height="34"/>
+                                <rect key="frame" x="86" y="491" width="239" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -53,27 +48,49 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pet Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0l-SA-vcb">
-                                <rect key="frame" x="87" y="419" width="240" height="34"/>
+                                <rect key="frame" x="86" y="419" width="239" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hCj-Ey-fg2">
-                                <rect key="frame" x="144" y="231" width="131" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Userpic" translatesAutoresizingMaskIntoConstraints="NO" id="hCj-Ey-fg2">
+                                <rect key="frame" x="142" y="229" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="SEu-Oh-K2T"/>
+                                    <constraint firstAttribute="height" constant="130" id="dHK-uV-tDh"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40q-gS-cg1">
+                                <rect key="frame" x="142" y="229" width="130" height="130"/>
+                                <connections>
+                                    <action selector="petSelectionButtonTapWithSender:" destination="4ze-PV-Bhd" eventType="touchUpInside" id="z7z-6n-BAY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TmE-Qt-nly"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KZU-8H-tab" firstAttribute="centerX" secondItem="0qh-ZT-wT7" secondAttribute="centerX" id="1sH-r0-bfh"/>
+                            <constraint firstItem="40q-gS-cg1" firstAttribute="centerX" secondItem="hCj-Ey-fg2" secondAttribute="centerX" id="8Nf-W4-YOA"/>
+                            <constraint firstItem="hCj-Ey-fg2" firstAttribute="centerX" secondItem="0qh-ZT-wT7" secondAttribute="centerX" id="8at-Fx-Lby"/>
+                            <constraint firstItem="hCj-Ey-fg2" firstAttribute="top" secondItem="KZU-8H-tab" secondAttribute="bottom" constant="20" id="DhR-ex-uwr"/>
+                            <constraint firstItem="KZU-8H-tab" firstAttribute="top" secondItem="TmE-Qt-nly" secondAttribute="top" constant="100" id="IuQ-yU-WDF"/>
+                            <constraint firstItem="40q-gS-cg1" firstAttribute="height" secondItem="hCj-Ey-fg2" secondAttribute="height" id="NG9-2n-kVC"/>
+                            <constraint firstItem="40q-gS-cg1" firstAttribute="width" secondItem="hCj-Ey-fg2" secondAttribute="width" id="ZMW-9u-fHz"/>
+                            <constraint firstItem="40q-gS-cg1" firstAttribute="centerY" secondItem="hCj-Ey-fg2" secondAttribute="centerY" id="kQF-uM-ouc"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="28h-Qd-Goe"/>
                     <connections>
                         <outlet property="NameTextField" destination="N0l-SA-vcb" id="QfF-J4-IFj"/>
+                        <outlet property="petImageView" destination="hCj-Ey-fg2" id="8iJ-3d-tYU"/>
+                        <outlet property="petSelectionButton" destination="40q-gS-cg1" id="3Ym-FS-UCD"/>
                         <outlet property="weightTextField" destination="GSs-QM-pey" id="Ebe-NT-Bkq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFs-rS-Y69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3610.144927536232" y="63.616071428571423"/>
+            <point key="canvasLocation" x="-6242" y="2265"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qr8-BI-gmg">
@@ -93,21 +110,93 @@
             </objects>
             <point key="canvasLocation" x="-4632" y="802"/>
         </scene>
-        <!--View Controller-->
+        <!--Pet List-->
         <scene sceneID="7qx-1R-VZ3">
             <objects>
-                <viewController id="S4U-D5-3Er" sceneMemberID="viewController">
+                <viewController id="S4U-D5-3Er" customClass="PetListViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iIj-4X-GfS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oV1-RW-HMv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PetCardCell" rowHeight="270" id="lHG-SS-CEM" customClass="PetCardCell" customModule="myZooKeeper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="270"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lHG-SS-CEM" id="diu-WU-ul5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-YP-qzC">
+                                                    <rect key="frame" x="107" y="10" width="200" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" priority="200" constant="200" id="cEG-lT-68y"/>
+                                                        <constraint firstAttribute="height" constant="200" id="kY6-aB-1d1"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4QW-d8-b5H">
+                                                    <rect key="frame" x="135" y="235" width="144.5" height="24"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PetName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-a7-h1U">
+                                                            <rect key="frame" x="0.0" y="0.0" width="81" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxY-j7-uKw">
+                                                            <rect key="frame" x="91" y="0.0" width="53.5" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4QW-d8-b5H" firstAttribute="centerX" secondItem="diu-WU-ul5" secondAttribute="centerX" id="UBR-HS-e5r"/>
+                                                <constraint firstItem="zfb-YP-qzC" firstAttribute="top" secondItem="diu-WU-ul5" secondAttribute="top" constant="10" id="X34-vD-MfC"/>
+                                                <constraint firstItem="zfb-YP-qzC" firstAttribute="centerX" secondItem="diu-WU-ul5" secondAttribute="centerX" id="jth-Hk-0a3"/>
+                                                <constraint firstItem="4QW-d8-b5H" firstAttribute="top" secondItem="zfb-YP-qzC" secondAttribute="bottom" constant="25" id="z23-Pq-9wh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="petName" destination="Dff-a7-h1U" id="UxI-QG-lf5"/>
+                                            <outlet property="petView" destination="zfb-YP-qzC" id="gfx-xG-pUD"/>
+                                            <outlet property="petWeight" destination="XxY-j7-uKw" id="09p-q5-nwR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="S4U-D5-3Er" id="UnS-QZ-YVN"/>
+                                    <outlet property="delegate" destination="S4U-D5-3Er" id="sp4-Ly-XaA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aGx-rV-8hQ"/>
                         <color key="backgroundColor" red="0.63529411759999999" green="0.83529411760000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oV1-RW-HMv" firstAttribute="leading" secondItem="aGx-rV-8hQ" secondAttribute="leading" id="ReL-dw-D3Y"/>
+                            <constraint firstItem="oV1-RW-HMv" firstAttribute="top" secondItem="aGx-rV-8hQ" secondAttribute="top" id="hDD-QV-TOx"/>
+                            <constraint firstItem="aGx-rV-8hQ" firstAttribute="bottom" secondItem="oV1-RW-HMv" secondAttribute="bottom" id="vA2-6D-cqZ"/>
+                            <constraint firstItem="aGx-rV-8hQ" firstAttribute="trailing" secondItem="oV1-RW-HMv" secondAttribute="trailing" id="yF4-8T-CoU"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bnH-mX-uv4"/>
+                    <navigationItem key="navigationItem" title="Pet List" id="bnH-mX-uv4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YvV-c3-PX7">
+                            <connections>
+                                <segue destination="4ze-PV-Bhd" kind="show" id="Y6v-T6-5lf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="oV1-RW-HMv" id="GJo-cj-Tvd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kxr-Gt-ySl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5146" y="2265"/>
+            <point key="canvasLocation" x="-5146.376811594203" y="2264.7321428571427"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ABQ-oJ-OaB">

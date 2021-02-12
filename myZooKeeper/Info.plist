@@ -73,5 +73,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>myZookeeper would like to access your photo library to choose pet image.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>myZookeeper would like to access your camera to take pet image.</string>
 </dict>
 </plist>
