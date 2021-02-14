@@ -33,7 +33,7 @@ class WalkthroughContentViewController: UIViewController {
         
         headingLabel.text = heading
         subHeadingLabel.text = subHeading
-        contentImageView.image = UIImage(named: imageFile)
+//        contentImageView.image = UIImage(named: imageFile)
     }
 
     /*
