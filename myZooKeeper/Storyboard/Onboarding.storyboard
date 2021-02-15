@@ -67,6 +67,10 @@
                                 <rect key="frame" x="-15" y="-15" width="441" height="731"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RoundedIcon (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Wuu-Wh-hW4">
+                                <rect key="frame" x="302" y="33" width="88" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RnH-N8-NDV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -128,6 +132,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="RoundedIcon (1)" width="1024" height="1024"/>
         <image name="homeBackground" width="375" height="375"/>
         <image name="signInButton" width="315" height="50"/>
         <namedColor name="AccentColor">
