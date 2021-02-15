@@ -21,7 +21,6 @@
 		A7E5537425D377A2004C5C4F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E5537325D377A2004C5C4F /* WalkthroughViewController.swift */; };
 		A7F31CC625C8C563001EA303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31CC525C8C563001EA303 /* AppDelegate.swift */; };
 		A7F31CC825C8C563001EA303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31CC725C8C563001EA303 /* SceneDelegate.swift */; };
-		A7F31CCA25C8C563001EA303 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31CC925C8C563001EA303 /* ViewController.swift */; };
 		A7F31CCF25C8C565001EA303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F31CCE25C8C565001EA303 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		A7F31CC225C8C563001EA303 /* myZooKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myZooKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F31CC525C8C563001EA303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F31CC725C8C563001EA303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7F31CC925C8C563001EA303 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A7F31CCE25C8C565001EA303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F31CD325C8C565001EA303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C959EFFB7A7363DA1052B5F8 /* Pods_myZooKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myZooKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +77,6 @@
 		A752D40D25D214720011B657 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A7F31CC925C8C563001EA303 /* ViewController.swift */,
 				60A87FFA25CB1F130018F46B /* AddPetViewController.swift */,
 				A752D41D25D23C8E0011B657 /* WalkthroughContentViewController.swift */,
 				A7E5537025D373AD004C5C4F /* WalkthroughPageViewController.swift */,
@@ -279,7 +276,6 @@
 				A7E5537125D373AD004C5C4F /* WalkthroughPageViewController.swift in Sources */,
 				A7E5537425D377A2004C5C4F /* WalkthroughViewController.swift in Sources */,
 				A737232525D665D4008E680C /* PetListViewController.swift in Sources */,
-				A7F31CCA25C8C563001EA303 /* ViewController.swift in Sources */,
 				A7F31CC625C8C563001EA303 /* AppDelegate.swift in Sources */,
 				A737232925D6693A008E680C /* Pet.swift in Sources */,
 				60A87FFB25CB1F130018F46B /* AddPetViewController.swift in Sources */,

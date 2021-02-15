@@ -13,9 +13,9 @@ protocol WalkthroughPageViewControllerDelegate: class {
 
 class WalkthroughPageViewController: UIPageViewController {
 
-    var pageHeadings = ["ZooKeeper", "Reminders"]
-    var pageImages = ["homeBackground", "homeBackground"]
-    var pageSubHeadings = ["Page 1", "Page 2"]
+    var pageHeadings = ["myZooKeeper", "Reminders"]
+    var pageImages = ["", ""]
+    var pageSubHeadings = ["pet-care made easy", "get medication reminders"]
 
     var currentIndex = 0
     
@@ -73,7 +73,7 @@ extension WalkthroughPageViewController: UIPageViewControllerDataSource {
         let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
         if let pageContentViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughContentViewController") as? WalkthroughContentViewController {
             
-            pageContentViewController.imageFile = pageImages[index]
+//            pageContentViewController.imageFile = pageImages[index]
             pageContentViewController.heading = pageHeadings[index]
             pageContentViewController.subHeading = pageSubHeadings[index]
             pageContentViewController.index = index
