@@ -13,7 +13,7 @@ protocol WalkthroughPageViewControllerDelegate: class {
 
 class WalkthroughPageViewController: UIPageViewController {
 
-    var pageHeadings = ["ZooKeeper", "Reminders"]
+    var pageHeadings = ["myZooKeeper", "Reminders"]
     var pageImages = ["homeBackground", "homeBackground"]
     var pageSubHeadings = ["Page 1", "Page 2"]
 

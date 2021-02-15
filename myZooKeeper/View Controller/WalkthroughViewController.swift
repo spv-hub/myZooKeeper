@@ -71,6 +71,7 @@ extension WalkthroughViewController:  GIDSignInDelegate {
             } else {
                 print("SignIn Complete!")
                 UserDefaults.standard.setValue(true, forKey: "isSignedIn")
+                //switch to add pet page
                 self.dismiss(animated: true, completion: nil)
             }
             
