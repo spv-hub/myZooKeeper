@@ -238,7 +238,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Task List" id="2ux-qx-jai">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="04j-nZ-H3u"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="04j-nZ-H3u">
+                            <connections>
+                                <action selector="didTapAdd" destination="tdx-qf-NxV" id="8mM-do-LpI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tasklist" destination="57P-fv-cYi" id="QKO-Cs-Q6g"/>
