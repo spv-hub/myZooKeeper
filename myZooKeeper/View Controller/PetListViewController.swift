@@ -10,12 +10,15 @@ import Firebase
 
 class PetListViewController: UIViewController {
     
+    @IBOutlet weak var contentPetView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
     var petList = [Pet]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+     
     }
     
     override func viewWillAppear(_ animated: Bool) {

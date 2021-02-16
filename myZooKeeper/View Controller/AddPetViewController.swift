@@ -7,6 +7,9 @@
 
 import UIKit
 import Firebase
+import FirebaseStorage
+
+
 
 class AddPetViewController: UIViewController {
     
@@ -98,7 +101,8 @@ class AddPetViewController: UIViewController {
     
     func uploadImage(image: UIImage, completion: @escaping ((_ url: URL?) -> ())) {
         let storageRef = Storage.storage().reference().child("petImages").child("\(Auth.auth().currentUser!.uid)").child("\(UUID().uuidString).png")
-        let imageData = image.pngData()
+        let imageData = image.jpegData(compressionQuality: 0.1)
+
         let metadata = StorageMetadata()
         metadata.contentType = "image/png"
         storageRef.putData(imageData!, metadata: metadata) { (url, error) in
