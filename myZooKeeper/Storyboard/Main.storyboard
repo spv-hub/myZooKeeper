@@ -75,7 +75,7 @@
                     <navigationItem key="navigationItem" id="28h-Qd-Goe">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Z0p-ES-eLj">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ymM-rv-I36">
-                                <rect key="frame" x="339" y="123" width="35" height="32"/>
+                                <rect key="frame" x="359" y="6" width="35" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
@@ -221,11 +221,11 @@
             </objects>
             <point key="canvasLocation" x="-4090" y="2265"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="ltC-o5-3qQ">
             <objects>
                 <navigationController id="Yw0-wg-qTQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ys7-Ze-XQ8"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="ys7-Ze-XQ8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qbI-gT-8uC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -238,11 +238,11 @@
             </objects>
             <point key="canvasLocation" x="-5145" y="1562"/>
         </scene>
-        <!--Item-->
+        <!--Notes-->
         <scene sceneID="Lir-rg-cMO">
             <objects>
                 <navigationController id="u3G-ha-MMA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CDc-Bc-Spa"/>
+                    <tabBarItem key="tabBarItem" title="Notes" image="bell" catalog="system" id="CDc-Bc-Spa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GGh-WH-jWK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -258,6 +258,8 @@
     </scenes>
     <resources>
         <image name="Userpic" width="110" height="110"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="↳ Display" width="168" height="21"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
