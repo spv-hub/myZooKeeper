@@ -6,25 +6,35 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
+
+
 
 class TasksViewController: UIViewController {
-
+    
+    
+   
+    
+    
+    @IBOutlet weak var tasklist: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+
+}
+
+extension TasksViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+extension TasksViewController: UITableViewDataSource {
+    
 }
 
