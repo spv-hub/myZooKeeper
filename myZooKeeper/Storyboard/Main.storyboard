@@ -281,7 +281,7 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="kPf-mb-p4v" firstAttribute="trailing" secondItem="lzw-su-cDa" secondAttribute="trailing" constant="20" id="8MO-C3-exO"/>
-                            <constraint firstItem="lzw-su-cDa" firstAttribute="top" secondItem="72J-kL-m6f" secondAttribute="bottom" constant="20" id="GFg-8x-VSI"/>
+                            <constraint firstItem="lzw-su-cDa" firstAttribute="top" secondItem="72J-kL-m6f" secondAttribute="bottom" constant="80" id="GFg-8x-VSI"/>
                             <constraint firstItem="lzw-su-cDa" firstAttribute="leading" secondItem="kPf-mb-p4v" secondAttribute="leading" constant="20" id="lsN-me-2Ee"/>
                         </constraints>
                     </view>
@@ -300,9 +300,26 @@
                     <view key="view" contentMode="scaleToFill" id="YKt-RT-w4h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLp-e8-7Cx">
+                                <rect key="frame" x="12" y="56" width="390" height="794"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="0jL-gw-1Ky"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0jL-gw-1Ky" firstAttribute="bottom" secondItem="SLp-e8-7Cx" secondAttribute="bottom" constant="12" id="NfD-hS-HtI"/>
+                            <constraint firstItem="0jL-gw-1Ky" firstAttribute="trailing" secondItem="SLp-e8-7Cx" secondAttribute="trailing" constant="12" id="gCZ-Jj-jQO"/>
+                            <constraint firstItem="SLp-e8-7Cx" firstAttribute="leading" secondItem="0jL-gw-1Ky" secondAttribute="leading" constant="12" id="xLT-Q8-DVf"/>
+                            <constraint firstItem="SLp-e8-7Cx" firstAttribute="top" secondItem="0jL-gw-1Ky" secondAttribute="top" constant="12" id="yVm-H9-tdi"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="SLp-e8-7Cx" id="31l-8k-lO5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jId-dL-jvh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

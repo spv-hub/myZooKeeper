@@ -58,9 +58,7 @@ class TasksViewController: UIViewController {
         vc.update = {
             DispatchQueue.main.async {
                 self.updateTasks()
-                
             }
-            
         }
         navigationController?.pushViewController(vc, animated: true)
         
@@ -72,9 +70,17 @@ extension TasksViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        let vc = storyboard?.instantiateViewController(identifier:"taskinfo") as! TaskInfoViewController
+        vc.title = "New Task"
+        vc.task = tasks[indexPath.row]
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
-    
+        
 }
+    
+
 
 extension TasksViewController: UITableViewDataSource {
     

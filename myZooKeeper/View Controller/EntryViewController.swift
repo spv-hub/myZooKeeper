@@ -48,7 +48,7 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         var ref: DocumentReference? = nil
         let uid = Auth.auth().currentUser!.uid
         
-        ref = Firestore.firestore().collection("pet_profiles").addDocument(data: [
+        ref = Firestore.firestore().collection("tasks-list").addDocument(data: [
             "userId": uid,
             "task": self.field.text!
         ]) { err in
