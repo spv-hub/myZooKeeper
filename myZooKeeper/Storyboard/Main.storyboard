@@ -73,7 +73,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="28h-Qd-Goe">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="Z0p-ES-eLj">
+                        <barButtonItem key="rightBarButtonItem" id="Z0p-ES-eLj">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ymM-rv-I36">
                                 <rect key="frame" x="359" y="6" width="35" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -225,7 +225,7 @@
         <!--Calendar Controller-->
         <scene sceneID="Qy1-6R-nfp">
             <objects>
-                <viewController id="AGZ-DN-V5s" userLabel="Calendar Controller" sceneMemberID="viewController">
+                <viewController id="AGZ-DN-V5s" userLabel="Calendar Controller" customClass="CalendarViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BN1-vi-fiA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,7 +236,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="eventButton:" destination="uIW-ZB-LjR" eventType="touchUpInside" id="w3h-TC-eAh"/>
+                                    <action selector="eventButton:" destination="AGZ-DN-V5s" eventType="touchUpInside" id="cVv-Rc-dcG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -246,7 +246,6 @@
                     <navigationItem key="navigationItem" id="Jig-VQ-FT4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7d-EI-anu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="uIW-ZB-LjR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-3787" y="2350"/>
         </scene>

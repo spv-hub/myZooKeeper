@@ -34,7 +34,9 @@ class CalendarViewController: UIViewController, EKEventEditViewDelegate {
             case .notDetermined:
                     eventStore.requestAccess(to: .event) { (granted, error) in
                         if granted {
-                            self.openEventUI(eventStore)
+                            DispatchQueue.main.async {
+                                self.openEventUI(eventStore)
+                            }
                               } else {
                                 print("Access denied")
                               }
