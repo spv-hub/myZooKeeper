@@ -7,7 +7,8 @@
 
 import UIKit
 import Firebase
-import FirebaseFirestore
+import FirebaseStorage
+
 
 class AddPetViewController: UIViewController {
     
@@ -99,7 +100,8 @@ class AddPetViewController: UIViewController {
     
     func uploadImage(image: UIImage, completion: @escaping ((_ url: URL?) -> ())) {
         let storageRef = Storage.storage().reference().child("petImages").child("\(Auth.auth().currentUser!.uid)").child("\(UUID().uuidString).png")
-        let imageData = image.pngData()
+        let imageData = image.jpegData(compressionQuality: 0.1)
+
         let metadata = StorageMetadata()
         metadata.contentType = "image/png"
         storageRef.putData(imageData!, metadata: metadata) { (url, error) in
@@ -129,18 +131,3 @@ extension AddPetViewController: UIImagePickerControllerDelegate, UINavigationCon
 }
 
 
-//call for retrieving docs from firestore
-//associate id for document associate it with user
-
-//tableview setup where data comes from
-//store current user ID
-// db.collection("cities").whereField("capital", isEqualTo: true)
-//.getDocuments() { (querySnapshot, err) in
-//    if let err = err {
-//        print("Error getting documents: \(err)")
-//    } else {
-//        for document in querySnapshot!.documents {
-//            print("\(document.documentID) => \(document.data())")
-//        }
-//    }
-//}
