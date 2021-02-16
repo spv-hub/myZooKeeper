@@ -16,6 +16,7 @@
 		A737232525D665D4008E680C /* PetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A737232425D665D4008E680C /* PetListViewController.swift */; };
 		A737232925D6693A008E680C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A737232825D6693A008E680C /* Pet.swift */; };
 		A752D41E25D23C8E0011B657 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A752D41D25D23C8E0011B657 /* WalkthroughContentViewController.swift */; };
+		A797F41025DC577C00D184E5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797F40F25DC577C00D184E5 /* CalendarViewController.swift */; };
 		A7A6A5EE25C935870092584F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7A6A5ED25C935870092584F /* GoogleService-Info.plist */; };
 		A7E5537125D373AD004C5C4F /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E5537025D373AD004C5C4F /* WalkthroughPageViewController.swift */; };
 		A7E5537425D377A2004C5C4F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E5537325D377A2004C5C4F /* WalkthroughViewController.swift */; };
@@ -34,6 +35,7 @@
 		A737232425D665D4008E680C /* PetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewController.swift; sourceTree = "<group>"; };
 		A737232825D6693A008E680C /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		A752D41D25D23C8E0011B657 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		A797F40F25DC577C00D184E5 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		A7A6A5ED25C935870092584F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A7E5537025D373AD004C5C4F /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		A7E5537325D377A2004C5C4F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				A7E5537325D377A2004C5C4F /* WalkthroughViewController.swift */,
 				A73722ED25D64E9A008E680C /* PetCardCell.swift */,
 				A737232425D665D4008E680C /* PetListViewController.swift */,
+				A797F40F25DC577C00D184E5 /* CalendarViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A797F41025DC577C00D184E5 /* CalendarViewController.swift in Sources */,
 				A7E5537125D373AD004C5C4F /* WalkthroughPageViewController.swift in Sources */,
 				A7E5537425D377A2004C5C4F /* WalkthroughViewController.swift in Sources */,
 				A737232525D665D4008E680C /* PetListViewController.swift in Sources */,
