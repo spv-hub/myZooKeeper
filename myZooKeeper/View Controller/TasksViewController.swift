@@ -14,13 +14,12 @@ import FirebaseFirestore
 class TasksViewController: UIViewController {
     
     
-   
-    
-    
     @IBOutlet weak var tasklist: UITableView!
+    var tasks = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // get all current saved tasks
 
     }
 
@@ -36,5 +35,15 @@ extension TasksViewController: UITableViewDelegate {
 
 extension TasksViewController: UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tasks.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        cell.textLabel?.text = tasks[indexPath.row]
+        return cell
+    }
 }
 
