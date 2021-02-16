@@ -201,7 +201,7 @@
         <!--To-Do List-->
         <scene sceneID="ABQ-oJ-OaB">
             <objects>
-                <viewController id="tdx-qf-NxV" sceneMemberID="viewController">
+                <viewController id="tdx-qf-NxV" customClass="TodoViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6bK-TV-zKf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,6 +231,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="To-Do List" id="2ux-qx-jai"/>
+                    <connections>
+                        <outlet property="tasklist" destination="hhb-sF-Odl" id="5e0-pL-pdx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tU-re-KGq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
