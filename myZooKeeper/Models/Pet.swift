@@ -20,7 +20,7 @@ class Pet {
     }
     
     init(snapshot: QueryDocumentSnapshot) {
-        petName = snapshot.data()["name"] as! String
+        petName = snapshot.data()["name"] as? String ?? "name"
         petWeight = snapshot.data()["weight"] as! String
         petImageUrl = snapshot.data()["petImageUrl"] as! String
     }

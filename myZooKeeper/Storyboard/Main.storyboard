@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFs-rS-Y69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6196" y="2364"/>
+            <point key="canvasLocation" x="-6449" y="2350"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qr8-BI-gmg">
@@ -204,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kxr-Gt-ySl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5146" y="2364"/>
+            <point key="canvasLocation" x="-5491" y="2350"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ABQ-oJ-OaB">
@@ -220,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tU-re-KGq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4139" y="2364"/>
+            <point key="canvasLocation" x="-4633" y="2350"/>
         </scene>
         <!--Calendar Controller-->
         <scene sceneID="Qy1-6R-nfp">
@@ -229,14 +229,26 @@
                     <view key="view" contentMode="scaleToFill" id="BN1-vi-fiA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CJ-9T-dsZ">
+                                <rect key="frame" x="181" y="366" width="54" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="eventButton:" destination="uIW-ZB-LjR" eventType="touchUpInside" id="w3h-TC-eAh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mDD-MM-8AZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jig-VQ-FT4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7d-EI-anu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="uIW-ZB-LjR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-3170" y="2364"/>
+            <point key="canvasLocation" x="-3787" y="2350"/>
         </scene>
         <!--Home-->
         <scene sceneID="ltC-o5-3qQ">
@@ -255,7 +267,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7X-9h-BNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5704" y="1562"/>
+            <point key="canvasLocation" x="-5490" y="1562"/>
         </scene>
         <!--Notes-->
         <scene sceneID="Lir-rg-cMO">
@@ -273,7 +285,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2CY-PR-2vF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4633" y="1606"/>
+            <point key="canvasLocation" x="-4633" y="1562"/>
         </scene>
         <!--Reminders -->
         <scene sceneID="19J-6P-Omz">
@@ -291,7 +303,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vf6-kb-74A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3425" y="1606"/>
+            <point key="canvasLocation" x="-3786" y="1562"/>
         </scene>
     </scenes>
     <resources>
