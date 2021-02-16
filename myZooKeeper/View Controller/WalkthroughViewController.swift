@@ -72,6 +72,13 @@ extension WalkthroughViewController:  GIDSignInDelegate {
                 print("SignIn Complete!")
                 UserDefaults.standard.setValue(true, forKey: "isSignedIn")
                 self.dismiss(animated: true, completion: nil)
+                let destinationStoryboard = UIStoryboard(name:"Main",bundle:nil)
+                let vc = destinationStoryboard.instantiateViewController(identifier: "Main")
+//                if let appDelegate = UIApplication.shared.delegate {
+//                appDelegate.window.rootViewController = vc;
+//                appDelegate.window.makeKeyAndVisible()
+                 self.show(vc, sender: nil)
+//                }
             }
             
         })
@@ -83,4 +90,6 @@ extension WalkthroughViewController:  GIDSignInDelegate {
     }
 }
 
+
+               
 
