@@ -205,7 +205,7 @@
             </objects>
             <point key="canvasLocation" x="-5146.376811594203" y="2264.7321428571427"/>
         </scene>
-        <!--Tasks View Controller-->
+        <!--Task List-->
         <scene sceneID="ABQ-oJ-OaB">
             <objects>
                 <viewController id="tdx-qf-NxV" customClass="TasksViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
@@ -237,7 +237,9 @@
                             <constraint firstItem="57P-fv-cYi" firstAttribute="top" secondItem="KwB-Xo-cM8" secondAttribute="top" id="pIK-jk-PfP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2ux-qx-jai"/>
+                    <navigationItem key="navigationItem" title="Task List" id="2ux-qx-jai">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="04j-nZ-H3u"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tasklist" destination="57P-fv-cYi" id="QKO-Cs-Q6g"/>
                     </connections>
@@ -246,10 +248,25 @@
             </objects>
             <point key="canvasLocation" x="-4090" y="2265"/>
         </scene>
-        <!--View Controller-->
+        <!--Entry View Controller-->
+        <scene sceneID="TZZ-h9-0O7">
+            <objects>
+                <viewController storyboardIdentifier="entry" id="INj-Yv-2Bj" customClass="EntryViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EoI-Jw-zPq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kPf-mb-p4v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xcy-Kq-If7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3732" y="2961"/>
+        </scene>
+        <!--Task Info View Controller-->
         <scene sceneID="y9F-F5-jDe">
             <objects>
-                <viewController id="3hP-s4-YZc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="taskinfo" id="3hP-s4-YZc" customClass="TaskInfoViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YKt-RT-w4h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
