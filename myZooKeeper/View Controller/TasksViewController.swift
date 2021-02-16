@@ -20,13 +20,14 @@ class TasksViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // get all current saved tasks
-        let vc = storyboard?.instantiateViewController(identifier:"entry") as! EntryViewController
-        vc.title = "New Task"
-        navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     @IBAction func didTapAdd() {
         //show another view controller to make an entry
+        let vc = storyboard?.instantiateViewController(identifier:"entry") as! EntryViewController
+        vc.title = "New Task"
+        navigationController?.pushViewController(vc, animated: true)
         
     }
 
