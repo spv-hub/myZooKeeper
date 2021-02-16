@@ -19,14 +19,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="↳ Display" translatesAutoresizingMaskIntoConstraints="NO" id="KZU-8H-tab">
                                 <rect key="frame" x="123" y="188" width="168" height="21"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymM-rv-I36">
-                                <rect key="frame" x="339" y="123" width="35" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="SavePet:" destination="4ze-PV-Bhd" eventType="touchUpInside" id="b3W-J0-yrN"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pet Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSs-QM-pey">
                                 <rect key="frame" x="86" y="491" width="239" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -80,7 +72,18 @@
                             <constraint firstItem="40q-gS-cg1" firstAttribute="centerY" secondItem="hCj-Ey-fg2" secondAttribute="centerY" id="kQF-uM-ouc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="28h-Qd-Goe"/>
+                    <navigationItem key="navigationItem" id="28h-Qd-Goe">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Z0p-ES-eLj">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ymM-rv-I36">
+                                <rect key="frame" x="339" y="123" width="35" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="SavePet:" destination="4ze-PV-Bhd" eventType="touchUpInside" id="b3W-J0-yrN"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="NameTextField" destination="N0l-SA-vcb" id="QfF-J4-IFj"/>
                         <outlet property="petImageView" destination="hCj-Ey-fg2" id="8iJ-3d-tYU"/>

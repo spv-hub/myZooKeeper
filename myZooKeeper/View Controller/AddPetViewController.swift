@@ -10,7 +10,6 @@ import Firebase
 import FirebaseStorage
 
 
-
 class AddPetViewController: UIViewController {
     
     @IBOutlet weak var NameTextField: UITextField!
@@ -132,18 +131,3 @@ extension AddPetViewController: UIImagePickerControllerDelegate, UINavigationCon
 }
 
 
-//call for retrieving docs from firestore
-//associate id for document associate it with user
-
-//tableview setup where data comes from
-//store current user ID
-// db.collection("cities").whereField("capital", isEqualTo: true)
-//.getDocuments() { (querySnapshot, err) in
-//    if let err = err {
-//        print("Error getting documents: \(err)")
-//    } else {
-//        for document in querySnapshot!.documents {
-//            print("\(document.documentID) => \(document.data())")
-//        }
-//    }
-//}
