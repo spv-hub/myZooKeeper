@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFs-rS-Y69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6242" y="2265"/>
+            <point key="canvasLocation" x="-6196" y="2364"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qr8-BI-gmg">
@@ -107,6 +107,7 @@
                     <connections>
                         <segue destination="Yw0-wg-qTQ" kind="relationship" relationship="viewControllers" id="qYS-yJ-6Sv"/>
                         <segue destination="u3G-ha-MMA" kind="relationship" relationship="viewControllers" id="817-3K-zHn"/>
+                        <segue destination="rR7-GC-fab" kind="relationship" relationship="viewControllers" id="7Zn-w9-8PB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L8u-CD-fXj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -203,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kxr-Gt-ySl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5146.376811594203" y="2264.7321428571427"/>
+            <point key="canvasLocation" x="-5146" y="2364"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ABQ-oJ-OaB">
@@ -219,7 +220,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tU-re-KGq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4090" y="2265"/>
+            <point key="canvasLocation" x="-4139" y="2364"/>
+        </scene>
+        <!--Calendar Controller-->
+        <scene sceneID="Qy1-6R-nfp">
+            <objects>
+                <viewController id="AGZ-DN-V5s" userLabel="Calendar Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BN1-vi-fiA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mDD-MM-8AZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jig-VQ-FT4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7d-EI-anu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3170" y="2364"/>
         </scene>
         <!--Home-->
         <scene sceneID="ltC-o5-3qQ">
@@ -238,13 +255,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7X-9h-BNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5145" y="1562"/>
+            <point key="canvasLocation" x="-5704" y="1562"/>
         </scene>
         <!--Notes-->
         <scene sceneID="Lir-rg-cMO">
             <objects>
                 <navigationController id="u3G-ha-MMA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notes" image="bell" catalog="system" id="CDc-Bc-Spa"/>
+                    <tabBarItem key="tabBarItem" title="Notes" image="bell" catalog="system" id="e2A-hY-jh6"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GGh-WH-jWK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -255,12 +273,31 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2CY-PR-2vF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4138" y="1562"/>
+            <point key="canvasLocation" x="-4633" y="1606"/>
+        </scene>
+        <!--Reminders -->
+        <scene sceneID="19J-6P-Omz">
+            <objects>
+                <navigationController id="rR7-GC-fab" userLabel="Reminders " sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Reminders" image="calendar" catalog="system" id="kzI-5t-JXE"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fw9-p7-whQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AGZ-DN-V5s" kind="relationship" relationship="rootViewController" id="JKe-Qr-tPO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vf6-kb-74A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3425" y="1606"/>
         </scene>
     </scenes>
     <resources>
         <image name="Userpic" width="110" height="110"/>
         <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="↳ Display" width="168" height="21"/>
         <systemColor name="systemBackgroundColor">
