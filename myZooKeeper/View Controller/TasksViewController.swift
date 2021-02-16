@@ -24,30 +24,47 @@ class TasksViewController: UIViewController {
         tasklist.delegate = self
         tasklist.dataSource = self
         
-        if !UserDefaults().bool(forKey: "setup") {
-            UserDefaults().set(true, forKey: "setup")
-            UserDefaults().set(0, forKey: "count")
-        }
+//        if !UserDefaults().bool(forKey: "setup") {
+//            UserDefaults().set(true, forKey: "setup")
+//            UserDefaults().set(0, forKey: "count")
+//        }
         
         //Get all current saved tasks
         updateTasks()
         
+        
+        
     }
     
     func updateTasks() {
-        
-        tasks.removeAll()
-        guard let count = UserDefaults().value(forKey: "count") as? Int else{
-            return
+        tasks = [String]()
+    
+            Firestore.firestore().collection("tasks-list").getDocuments { (snapshot, error) in
+                if error != nil {
+                    print("Error fetching tasks list!")
+                } else {
+                    guard let documentSnapshot = snapshot, !documentSnapshot.isEmpty else {
+                        print("Error fetching pet list! May be empty list.")
+                        return
+                    }
+                    
+                    let taskDocuments = documentSnapshot.documents
+                    
+                    for document in taskDocuments {
+                        let task = document.data()["task"] as! String
+                        self.tasks.append(task)
+                    }
+                    
+                    DispatchQueue.main.async {
+                        self.tasklist.reloadData()
+                    }
+                
+                    
+                    
+                }
+            
         }
-        
-        for x in 0..<count {
-            if let task = UserDefaults().value(forKey: "task_\(x+1)") as? String {
-                tasks.append(task)
-            }
-        }
-        
-        tasklist.reloadData()
+      
     }
     
     
