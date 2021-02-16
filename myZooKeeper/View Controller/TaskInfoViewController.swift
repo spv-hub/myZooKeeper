@@ -18,7 +18,7 @@ class TaskInfoViewController: UIViewController {
         super.viewDidLoad()
 
         label.text = task
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(deleteTask))
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(deleteTask))
     }
     
     @objc func deleteTask() {
