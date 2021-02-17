@@ -12,6 +12,9 @@
 		6075AADB25D487EE00A5371D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6075AAD925D487EE00A5371D /* LaunchScreen.storyboard */; };
 		6075AADC25D487EE00A5371D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6075AADA25D487EE00A5371D /* Main.storyboard */; };
 		60A87FFB25CB1F130018F46B /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A87FFA25CB1F130018F46B /* AddPetViewController.swift */; };
+		60B51D6725DC085A004B6056 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B51D6625DC085A004B6056 /* TasksViewController.swift */; };
+		60B51D6C25DC11A7004B6056 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B51D6B25DC11A7004B6056 /* EntryViewController.swift */; };
+		60B51D6F25DC11F7004B6056 /* TaskInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B51D6E25DC11F7004B6056 /* TaskInfoViewController.swift */; };
 		A73722EE25D64E9A008E680C /* PetCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73722ED25D64E9A008E680C /* PetCardCell.swift */; };
 		A737232525D665D4008E680C /* PetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A737232425D665D4008E680C /* PetListViewController.swift */; };
 		A737232925D6693A008E680C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A737232825D6693A008E680C /* Pet.swift */; };
@@ -30,6 +33,9 @@
 		6075AAD925D487EE00A5371D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6075AADA25D487EE00A5371D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		60A87FFA25CB1F130018F46B /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
+		60B51D6625DC085A004B6056 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		60B51D6B25DC11A7004B6056 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		60B51D6E25DC11F7004B6056 /* TaskInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfoViewController.swift; sourceTree = "<group>"; };
 		9B895190997A2B9AF7BD2AE2 /* Pods-myZooKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myZooKeeper.debug.xcconfig"; path = "Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 		A73722ED25D64E9A008E680C /* PetCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCardCell.swift; sourceTree = "<group>"; };
 		A737232425D665D4008E680C /* PetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 		A752D40D25D214720011B657 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				60B51D6E25DC11F7004B6056 /* TaskInfoViewController.swift */,
+				60B51D6B25DC11A7004B6056 /* EntryViewController.swift */,
+				60B51D6625DC085A004B6056 /* TasksViewController.swift */,
 				60A87FFA25CB1F130018F46B /* AddPetViewController.swift */,
 				A752D41D25D23C8E0011B657 /* WalkthroughContentViewController.swift */,
 				A7E5537025D373AD004C5C4F /* WalkthroughPageViewController.swift */,
@@ -278,12 +287,15 @@
 			files = (
 				A797F41025DC577C00D184E5 /* CalendarViewController.swift in Sources */,
 				A7E5537125D373AD004C5C4F /* WalkthroughPageViewController.swift in Sources */,
+				60B51D6F25DC11F7004B6056 /* TaskInfoViewController.swift in Sources */,
 				A7E5537425D377A2004C5C4F /* WalkthroughViewController.swift in Sources */,
 				A737232525D665D4008E680C /* PetListViewController.swift in Sources */,
 				A7F31CC625C8C563001EA303 /* AppDelegate.swift in Sources */,
 				A737232925D6693A008E680C /* Pet.swift in Sources */,
 				60A87FFB25CB1F130018F46B /* AddPetViewController.swift in Sources */,
+				60B51D6C25DC11A7004B6056 /* EntryViewController.swift in Sources */,
 				A752D41E25D23C8E0011B657 /* WalkthroughContentViewController.swift in Sources */,
+				60B51D6725DC085A004B6056 /* TasksViewController.swift in Sources */,
 				A7F31CC825C8C563001EA303 /* SceneDelegate.swift in Sources */,
 				A73722EE25D64E9A008E680C /* PetCardCell.swift in Sources */,
 			);
