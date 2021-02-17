@@ -326,7 +326,6 @@
             </objects>
             <point key="canvasLocation" x="-3212" y="2280"/>
         </scene>
-        <!--Item-->
         <!--Calendar Controller-->
         <scene sceneID="Qy1-6R-nfp">
             <objects>
@@ -336,10 +335,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CJ-9T-dsZ">
-                                <rect key="frame" x="181" y="366" width="54" height="34"/>
+                                <rect key="frame" x="172" y="366" width="73" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Calendar"/>
                                 <connections>
                                     <action selector="eventButton:" destination="AGZ-DN-V5s" eventType="touchUpInside" id="cVv-Rc-dcG"/>
                                 </connections>
@@ -348,7 +347,7 @@
                         <viewLayoutGuide key="safeArea" id="mDD-MM-8AZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Jig-VQ-FT4"/>
+                    <navigationItem key="navigationItem" title="Reminders" id="Jig-VQ-FT4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7d-EI-anu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -418,9 +417,6 @@
         <image name="↳ Display" width="168" height="21"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
