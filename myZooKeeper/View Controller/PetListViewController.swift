@@ -28,6 +28,8 @@ class PetListViewController: UIViewController {
     }
     
     func fetchPetList() {
+        self.petList = []
+        
         Firestore.firestore().collection("pet_profiles").getDocuments { (snapshot, error) in
             if error != nil {
                 print("Error fetching pet list!")
